@@ -61,13 +61,16 @@ cc_library_shared {
     srcs: [
         "compress.c",
         "utils.c",
+        "compress_hw.c",
+         "compress_plugin.c",
+         "snd_utils.c",
     ],
     shared_libs: [
         "libcutils",
         "libutils",
     ],
     header_libs: [
-        "device_kernel_headers",
+        "generated_kernel_headers",
     ],
 }
 
